@@ -64,7 +64,6 @@ function measurement(val::Real, err::Real=zero(float(val)))
     tag = rand()
     return Measurement(val, err, tag, Derivatives((val, err, tag)=>der))
 end
-@vectorize_2arg Real measurement
 const ± = measurement
 
 # Type representation

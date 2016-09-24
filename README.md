@@ -2,9 +2,8 @@
 
 | **Documentation**                       | [**Package Evaluator**][pkgeval-link] | **Build Status**                          | **Code Coverage**               |
 |:---------------------------------------:|:-------------------------------------:|:-----------------------------------------:|:-------------------------------:|
-| [![][docs-stable-img]][docs-stable-url] | [![][pkg-0.4-img]][pkg-0.4-url]       | [![Build Status][travis-img]][travis-url] | [![][coveral-img]][coveral-url] |
-| [![][docs-latest-img]][docs-latest-url] | [![][pkg-0.5-img]][pkg-0.5-url]       | [![Build Status][appvey-img]][appvey-url] | [![][codecov-img]][codecov-url] |
-|                                         | [![][pkg-0.6-img]][pkg-0.6-url]       |                                           |                                 |
+| [![][docs-stable-img]][docs-stable-url] | [![][pkg-0.5-img]][pkg-0.5-url]       | [![Build Status][travis-img]][travis-url] | [![][coveral-img]][coveral-url] |
+| [![][docs-latest-img]][docs-latest-url] | [![][pkg-0.6-img]][pkg-0.6-url]       | [![Build Status][appvey-img]][appvey-url] | [![][codecov-img]][codecov-url] |
 
 Introduction
 ------------
@@ -63,7 +62,7 @@ https://media.readthedocs.org/pdf/measurementsjl/latest/measurementsjl.pdf.
 Installation
 ------------
 
-`Measurements.jl` is available for Julia 0.4 and later versions, and can be
+`Measurements.jl` is available for Julia 0.5 and later versions, and can be
 installed with
 [Julia built-in package manager](http://docs.julialang.org/en/stable/manual/packages/).
 In a Julia session run the commands
@@ -356,8 +355,6 @@ original author is Mosè Giordano.
 
 [pkgeval-link]: http://pkg.julialang.org/?pkg=Measurements
 
-[pkg-0.4-img]: http://pkg.julialang.org/badges/Measurements_0.4.svg
-[pkg-0.4-url]: http://pkg.julialang.org/detail/Measurements.html
 [pkg-0.5-img]: http://pkg.julialang.org/badges/Measurements_0.5.svg
 [pkg-0.5-url]: http://pkg.julialang.org/detail/Measurements.html
 [pkg-0.6-img]: http://pkg.julialang.org/badges/Measurements_0.6.svg

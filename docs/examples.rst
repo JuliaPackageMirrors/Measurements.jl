@@ -265,12 +265,12 @@ operations on them in the most natural way possible:
 
     A = [1.03 ± 0.14, 2.88 ± 0.35, 5.46 ± 0.97]
     B = [0.92 ± 0.11, 3.14 ± 0.42, 4.67 ± 0.58]
-    exp(sqrt(B)) - log(A)
+    exp.(sqrt.(B)) - log.(A)
     # => 3-element Array{Measurements.Measurement{Float64},1}:
     #     2.5799612193837493 ± 0.20215123893809778
     #     4.824843081566397 ± 0.7076631767039828
     #     6.982522998771525 ± 1.178287422979362
-    cos(A).^2 + sin(A).^2
+    cos.(A).^2 + sin.(A).^2
     # 3-element Array{Measurements.Measurement{Float64},1}:
     #     1.0 ± 0.0
     #     1.0 ± 0.0
@@ -278,11 +278,13 @@ operations on them in the most natural way possible:
 
 If you originally have separate arrays of values and uncertainties, you can
 create an array of ``Measurement`` objects by providing ``measurement`` with
-those arrays:
+those arrays (remember to use the `dot syntax
+<http://docs.julialang.org/en/stable/manual/functions/#man-dot-vectorizing>`__
+for vectorizing functions):
 
 .. code-block:: julia
 
-    C = measurement([174.9, 253.8, 626.1], [12.2, 19.4, 38.5])
+    C = measurement.([174.9, 253.8, 626.1], [12.2, 19.4, 38.5])
     # => 3-element Array{Measurements.Measurement{Float64},1}:
     #     174.9 ± 12.2
     #     253.8 ± 19.4

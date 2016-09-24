@@ -24,7 +24,7 @@ test_approx_eq(stdscore(x, y), -10 ± 2)
 @test_approx_eq stdscore(w, x.val) -350/3
 
 # Vectorial version of Measurement
-@test measurement(1:2:5, 2:2:6) == [1±2, 3±4, 5±6]
+@test measurement.(1:2:5, 2:2:6) == [1±2, 3±4, 5±6]
 
 # Weighted Average with Inverse-Variance Weighting
 test_approx_eq(weightedmean((w, x, y)),
